@@ -2899,7 +2899,7 @@ SpriteRenderer:
   m_SortingLayerID: 1312119367
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1460338280, guid: 29a7a052083214241a89d23959b8c7b9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 367c16112d11e5e4caebc6e80756c3a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7917,6 +7917,7 @@ MonoBehaviour:
   _waveState: 0
   _playerSpawnPoint: {x: 0, y: -7}
   _timeBeforeWave: 3
+  _currentLevel: 0
   _spawnPointsLevel1:
   - {fileID: 578676319}
   - {fileID: 1233325106}
@@ -8054,6 +8055,8 @@ MonoBehaviour:
   - {fileID: 2370107363748929175, guid: 8b3ff1041f5cc534190068760f611125, type: 3}
   - {fileID: 2436668010770759263, guid: df732876422f7ed43b4a474ead1a4c1b, type: 3}
   _player: {fileID: 1473443903}
+  _currentSpawnPoints: []
+  _currentLevelObject: {fileID: 0}
 --- !u!4 &991959312
 Transform:
   m_ObjectHideFlags: 0

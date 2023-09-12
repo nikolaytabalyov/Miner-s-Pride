@@ -52,10 +52,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3886886860761627295, guid: 5a9478220567a184ea3ec280493bc77e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1195983197, guid: da8427869a4f74241bccad303a7eebce, type: 3}
     - target: {fileID: 8322764410957756686, guid: 5a9478220567a184ea3ec280493bc77e, type: 3}
       propertyPath: _enemyType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8322764410957756686, guid: 5a9478220567a184ea3ec280493bc77e, type: 3}
+      propertyPath: _enemyProjectilePrefab
+      value: 
+      objectReference: {fileID: 7448951883929596981, guid: feb0d03a8546ebe4795ce0a3ae6343cf, type: 3}
     - target: {fileID: 8322764410957756686, guid: 5a9478220567a184ea3ec280493bc77e, type: 3}
       propertyPath: _obstacleLayerMask.m_Bits
       value: 512
