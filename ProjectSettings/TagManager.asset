@@ -20,9 +20,9 @@ TagManager:
   - Player
   - Walls
   - Projectiles
-  - 
-  - 
-  - 
+  - OutsideDarkness
+  - Floor
+  - InsideDarkness
   - 
   - 
   - 
@@ -48,8 +48,17 @@ TagManager:
   - name: Backgound
     uniqueID: 3963581203
     locked: 0
+  - name: OutsideDarkness
+    uniqueID: 3111845793
+    locked: 0
+  - name: Floor
+    uniqueID: 3071435613
+    locked: 0
   - name: Walls
     uniqueID: 313041915
+    locked: 0
+  - name: InsideDarkness
+    uniqueID: 1901322223
     locked: 0
   - name: Enemies
     uniqueID: 4126249813
