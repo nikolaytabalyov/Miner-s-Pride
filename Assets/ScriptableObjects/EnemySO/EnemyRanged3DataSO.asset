@@ -18,6 +18,6 @@ MonoBehaviour:
   attackDamage: 20
   attackRange: 1
   attackSpeed: 1.5
-  movementSpeed: 8
+  movementSpeed: 18
   shootingMovementSpeed: 4
-  idleMovementSpeed: 450
+  idleMovementSpeed: 220

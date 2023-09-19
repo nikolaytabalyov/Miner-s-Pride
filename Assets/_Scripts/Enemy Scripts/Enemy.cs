@@ -83,17 +83,19 @@ public class Enemy : MonoBehaviour {
         _changeDirectionTimer = 0f;
     }
 
-
     private void Update() {
         _attackTimer += Time.deltaTime;
+        _enemyAttackMethod?.Invoke();
+        
+    }
+
+    private void FixedUpdate() {
         if (_targetTransform != null && _enemyState == EnemyState.Chase) {
             MoveTowardsTarget();
         } else if (_enemyState == EnemyState.Idle) {
             SetRandomDirection();
             Wander();
         }
-        _enemyAttackMethod?.Invoke();
-        
     }
     #endregion
     private void Enemy_OnTargetExitAttackRange(object sender, EventArgs e) {
@@ -109,7 +111,7 @@ public class Enemy : MonoBehaviour {
     #region Other Methods
     private void SetRandomDirection() {
         if (_changeDirectionTimer > 0f) {
-            _changeDirectionTimer -= Time.deltaTime;
+            _changeDirectionTimer -= Time.fixedDeltaTime;
         }  
         if (_changeDirectionTimer <= 0f) {
             float randomDirection = UnityEngine.Random.Range(0f, 360f);
